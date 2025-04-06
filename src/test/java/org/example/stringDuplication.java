@@ -1,29 +1,17 @@
 package org.example;
 
-public class stringDuplication {
+class GFG {
+   public static void main(String args[]){
 
-    // Used as index in the modified string
-    public static String removeDuplicate(String s) {
-        StringBuilder sb = new StringBuilder(s.length());
-        boolean[] seen = new boolean[256];
+           String reverse="Vinayak";
+           char ch;
+           String r="";
+           for(int i =0;i<reverse.length();i++){
+               ch = reverse.charAt(i);
+               r= ch+r;
 
-        // Traverse through all characters
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
+           }
+           System.out.println(r);
+       }
+   }
 
-            // Check if s[i] is present before it
-            if (!seen[c]) {
-                sb.append(c);
-                seen[c] = true;
-            }
-        }
-
-        return sb.toString();
-    }
-
-    // Driver code
-    public static void main(String[] args) {
-        String s = "geeksforgeeks";
-        System.out.println(removeDuplicate(s));
-    }
-}
