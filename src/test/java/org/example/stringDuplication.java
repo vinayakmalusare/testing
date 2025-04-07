@@ -3,11 +3,11 @@ package org.example;
 class GFG {
    public static void main(String args[]){
 
-           String reverse="Vinayak";
+           String rev="Vinayak";
            char ch;
            String r="";
-           for(int i =0;i<reverse.length();i++){
-               ch = reverse.charAt(i);
+           for(int i =0;i<rev.length();i++){
+               ch = rev.charAt(i);
                r= ch+r;
 
            }
